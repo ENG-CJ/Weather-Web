@@ -1,0 +1,89 @@
+<html>
+<head>
+    <title>Weather App</title>
+       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    
+    <script src="https://kit.fontawesome.com/bf4c2bff60.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+<body>
+    
+    <div class="weather">
+        <header>
+            <div class="weather-title">
+                 <i class="far fa-arrow-alt-circle-left" style="margin-right: 10px; font-size: 20px;cursor: pointer"></i>
+            <span>Weather App</span>
+            </div>
+            <div class="weather-search">
+                <button type="button" id="search" data-toggle="modal" data-target="#exampleModalCenter">Search</button>
+            </div>
+             
+        </header>
+       
+
+        
+        <div class="weather-body">
+            <div class="weather-icon">
+                <div class="icon">
+                    <img src="#" class="icon-1">
+                </div>
+            </div>
+            <div class="degree-section">
+                <h2 class="degree">32°C</h2>
+                <div class="degree-desc">
+                    <p>Broken Clouds</p>
+                </div>
+            </div>
+            
+            <div class="location">
+                <p class="country">
+                    <i class="fa fa-map-marker" aria-hidden="true" style="font-size: 19px"></i> <span class="c-city" style="font-size: 20px"></span>
+                </p>
+            </div>
+            
+            <div class="details">
+               
+                <div class="feals">
+                    <i class="fas fa-temperature-high feel"></i> 
+                    <span style="font-size: 20px"></span>
+                   
+                </div>
+                 
+                <div class="humadity">
+                  <i class="fas fa-meteor"></i> <span>45 </span>
+                   
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+           <h3 class="modal-title">Search A City</h3>
+          </div>
+      <div class="modal-body">
+        <div class="form-group">
+            <label class="pb-2 m-auto">Search</label>
+            <input class="form-control city" placeholder="Enter Valid City @Mogadishu">
+          </div>
+          
+          <input class="form-control mt-3 bg-primary text-light "  type="button" value="Get Weather" style="width: 30%" data-dismiss="modal" id="get-weather">
+      </div>
+      
+    </div>
+  </div>
+</div>
+    <script src="skycons.js"></script>
+    <script src="app.js" type="module"></script>
+    
+</body>
+</html>
