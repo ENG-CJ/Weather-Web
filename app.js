@@ -86,7 +86,7 @@ function weatherCondition(iconID, icon) {
     } else if (iconID >= 600 && iconID <= 622) {
         icon.src = 'snow.png'
     } else if (iconID >= 701 && iconID <= 781) {
-        icon.src = 'Atmosphere.png'
+        icon.src = 'atmosphere.png'
     } else if (iconID >= 801 && iconID <= 804) {
         icon.src = 'cloud.png'
     }
